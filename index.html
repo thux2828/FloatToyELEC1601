@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Float Toy for ELEC1601</title>
+  <meta name="description" content="A floating point toy for ELEC1601.">
+  <meta name="author" content="Tim Huxley">
+  <meta property="og:title" content="ELEC1601 Floating Point Toy">
+  <meta property="og:type" content="application/javascript">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="A floating point toy for ELEC1601.">
+  <meta property="og:image" content="img/og_image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/og_image.png">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+<div class = "main">
+  <h1>Float Toy for ELEC1601</h1>
+  <table>
+    <tr>
+      <td><h3>Sign</h3></td><td></td><td colspan = "3"><h3>Mantissa</h3></td><td></td><td colspan = "3"><h3>Exponent</h3></td>
+    </tr>
+    <tr>
+      <td>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>2<sup id = "mant_exp0"></sup></td>
+          <td>2<sup id = "mant_exp1"></sup></td>
+          <td>2<sup id = "mant_exp2"></sup></td>
+
+        </tr>
+        <tr id = "sign">
+          <td id = "sign0" class = "bit sign">0</td>
+
+          <td></td>
+          <td id = "mant0" class = "bit mant">1</td>
+          <td id = "mant1" class = "bit mant">0</td>
+          <td id = "mant2" class = "bit mant">0</td>
+
+          <td></td>
+          <td id = "exp0" class = "bit exp">0</td>
+          <td id = "exp1" class = "bit exp">0</td>
+          <td id = "exp2" class = "bit exp">0</td>
+
+        </tr>
+        <tr>
+          <td id = "sign_res"></td>
+          <td></td>
+
+          <td id = "mant_fract0"></td>
+          <td id = "mant_fract1"></td>
+          <td id = "mant_fract2"></td>
+          <td></td>
+
+          <td>2<sup><span id = "exp_res"></span></sup> =</td>
+          <td><span id = "exp_fract"></span></td>
+
+
+        </tr>
+      </td>
+      <td>
+        <tr>
+
+
+        </tr>
+        <tr id = "mant">
+
+        </tr>
+        <tr>
+
+        </tr>
+      </td>
+      <td>
+
+        <tr id = "exp">
+
+        </tr>
+        <tr>
+
+        </tr>
+      </td>
+    </tr>
+  </table>
+
+  <div id = "warning" >
+    <img src = img/cross.png class = "close-button">
+    <p class = "info" >According to the encoding scheme used in the <a href = "https://canvas.sydney.edu.au/courses/35882/pages/2-dot-7-encoding-real-numbers-with-floating-point-representation">text</a>, the most significant bit
+    in the mantissa must not be turned off.</p>
+    <blockquote>
+      <p>Some encoding schemes also omit the most significant bit of the mantissa because it is by definition a “1” (this is referred to as a hidden bit).  We do not use this.</p>
+    </blockquote>
+  </div>
+
+
+
+  <p>
+    = <span id = "s">+</span>(<span id = "a"></span> + <span id = "b">0</span> + <span id = "c">0</span>)
+  </p>
+  <p>
+    = <span id = "result"></span>
+  </p>
+</div>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+<footer>
+
+  <p>NB: This is a student-made app. I made it to help me get my head around
+    floating point and thought I'd share it in case others can benefit too.
+    It might not be correct. It was not created by University teaching staff.
+    It may not be endorsed by them either.</p>
+  <p>This is my first web app. I crammed CSS, HTML and Javascript in one
+    afternoon, so there's a high probability of messy code and bugs. Credit for the idea goes to <a href = "https://evanw.github.io/float-toy/">Evanw's IEEE Float Toy</a>.
+</footer>
+
+</html>

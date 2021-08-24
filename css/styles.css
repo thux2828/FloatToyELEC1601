@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Hina";
+  src: url("HinaMincho-Regular.ttf");
+}
+
+html{
+  font-family: "Hina", "Hina Mincho", serif;
+  font-size: 1.4em;
+  padding:0;
+  margin:0;
+}
+
+
+
+table {
+  padding: 0px;
+  border: 0px;
+  margin: 2px;
+  border-collapse: collapse;
+  text-align: center;
+}
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+p{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  margin:0px;
+}
+
+h1{
+  text-align: center;
+}
+
+.main{
+  margin: 1em;
+  min-height: 15em;
+}
+
+tr {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+.invis {
+  visibility: visible;
+}
+td {
+  padding: 2px;
+  border: 0px;
+  margin: 0px;
+}
+
+.sign {
+  background-color: #CCC;
+}
+
+.mant {
+  background-color: #FA8;
+}
+
+.exp {
+  background-color: #9F7;
+}
+
+#warning{
+  background-color: pink;
+  max-width: 40em;
+  padding: .1em;
+  display: none;
+}
+
+.info {
+  margin: 1em 1em 1em 1em;
+
+}
+
+.bit {
+  border: 1px solid #000;
+  text-align: center;
+  width: 2em;
+  cursor: pointer;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline-block;
+}
+
+.close-button{
+  padding: 1em 1em .1em .1em;
+  float: right;
+  display:inline-block;
+  width: 2em;
+  height: 2em;
+}
+
+
+footer {
+
+  bottom:0;
+  margin: 0px;
+  border: 0px;
+  color: white;
+  display: block;
+  background-color: #444;
+  width: 100%
+}
+
+footer p {
+  padding: 1em;
+}
